@@ -1,0 +1,150 @@
+[{
+  "_id": {
+    "$oid": "693188bb59cd9c5504c0ef3d"
+  },
+  "name": "Suresh",
+  "email": "suresh@gmail.com",
+  "age": 23,
+  "createdAt": {
+    "$date": "2025-12-04T13:12:27.617Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T13:12:27.617Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693188ca59cd9c5504c0ef41"
+  },
+  "name": "Ganesh",
+  "email": "ganesh@gmail.com",
+  "age": 19,
+  "createdAt": {
+    "$date": "2025-12-04T13:12:42.646Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T13:12:42.646Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693188dd59cd9c5504c0ef45"
+  },
+  "name": "Subash",
+  "email": "subash@gmail.com",
+  "age": 20,
+  "createdAt": {
+    "$date": "2025-12-04T13:13:01.549Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T13:13:01.549Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693188ef59cd9c5504c0ef49"
+  },
+  "name": "Mahesh",
+  "email": "mahesh@gmail.com",
+  "age": 18,
+  "createdAt": {
+    "$date": "2025-12-04T13:13:19.923Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T13:13:19.923Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "693188fd59cd9c5504c0ef4d"
+  },
+  "name": "Amar",
+  "email": "amar@gmail.com",
+  "age": 23,
+  "createdAt": {
+    "$date": "2025-12-04T13:13:33.922Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T13:13:33.922Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6931890e59cd9c5504c0ef51"
+  },
+  "name": "Murali",
+  "email": "murali@gmail.com",
+  "age": 22,
+  "createdAt": {
+    "$date": "2025-12-04T13:13:50.748Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T13:13:50.748Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6931891d59cd9c5504c0ef55"
+  },
+  "name": "Jayanth",
+  "email": "jayanth@gmail.com",
+  "age": 24,
+  "createdAt": {
+    "$date": "2025-12-04T13:14:05.806Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T13:14:05.806Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6931892b59cd9c5504c0ef59"
+  },
+  "name": "sai",
+  "email": "sai@gmail.com",
+  "age": 25,
+  "createdAt": {
+    "$date": "2025-12-04T13:14:19.425Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T13:14:19.425Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6931893b59cd9c5504c0ef5d"
+  },
+  "name": "Jaya",
+  "email": "jaya@gmail.com",
+  "age": 26,
+  "createdAt": {
+    "$date": "2025-12-04T13:14:35.097Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T13:14:35.097Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6931d7aef36a17e2a60c80d1"
+  },
+  "name": "Ravi Kumar",
+  "email": "ravi.kumar@example.com",
+  "age": 22,
+  "createdAt": {
+    "$date": "2025-12-04T18:49:18.880Z"
+  },
+  "updatedAt": {
+    "$date": "2025-12-04T18:49:18.880Z"
+  },
+  "__v": 0
+}]

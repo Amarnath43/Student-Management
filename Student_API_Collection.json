@@ -1,0 +1,258 @@
+{
+	"info": {
+		"_postman_id": "b345678-1234-5678-9101-abcdef123456",
+		"name": "Student Management System (MERN)",
+		"description": "API Collection for Node.js + MongoDB Machine Test. Includes CRUD for Students and Marks, plus Pagination.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Students",
+			"item": [
+				{
+					"name": "1. Create Student",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Ravi Kumar\",\n    \"email\": \"ravi.kumar@example.com\",\n    \"age\": 22\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/students",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"students"
+							]
+						},
+						"description": "Creates a new student record."
+					},
+					"response": []
+				},
+				{
+					"name": "2. Get All Students (Paginated)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/students?page=1&limit=10",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"students"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1",
+									"description": "Page number"
+								},
+								{
+									"key": "limit",
+									"value": "10",
+									"description": "Records per page"
+								}
+							]
+						},
+						"description": "Retrieves a list of students with pagination metadata."
+					},
+					"response": []
+				},
+				{
+					"name": "3. Get Single Student (With Marks)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/students/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"students",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "REPLACE_WITH_REAL_ID",
+									"description": "The MongoDB ObjectId of the student"
+								}
+							]
+						},
+						"description": "Retrieves a single student by ID."
+					},
+					"response": []
+				},
+				{
+					"name": "4. Update Student",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Ravi Kumar Updated\",\n    \"age\": 23\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/students/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"students",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "REPLACE_WITH_REAL_ID"
+								}
+							]
+						},
+						"description": "Updates student information."
+					},
+					"response": []
+				},
+				{
+					"name": "5. Delete Student",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/students/:id",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"students",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "REPLACE_WITH_REAL_ID"
+								}
+							]
+						},
+						"description": "Deletes a student and cascades delete to their marks."
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Marks",
+			"item": [
+				{
+					"name": "1. Add Marks",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"studentId\": \"REPLACE_WITH_REAL_STUDENT_ID\",\n    \"subject\": \"Mathematics\",\n    \"marks\": 95\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/marks",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"marks"
+							]
+						},
+						"description": "Adds a mark record linked to a student."
+					},
+					"response": []
+				},
+				{
+					"name": "2. Get Marks by Student ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/marks/student/:studentId",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"marks",
+								"student",
+								":studentId"
+							],
+							"variable": [
+								{
+									"key": "studentId",
+									"value": "REPLACE_WITH_REAL_STUDENT_ID"
+								}
+							]
+						},
+						"description": "Retrieves all marks for a specific student."
+					},
+					"response": []
+				},
+				{
+					"name": "3. Delete Subject",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"subject\": \"Mathematics\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/student/:studentId/subject",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"student",
+								":studentId",
+								"subject"
+							],
+							"variable": [
+								{
+									"key": "studentId",
+									"value": "REPLACE_WITH_REAL_STUDENT_ID",
+									"description": "The MongoDB ObjectId of the student"
+								}
+							]
+						},
+						"description": "Deletes a specific subject for a student."
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:5000/api",
+			"type": "string"
+		}
+	]
+}

@@ -1,0 +1,99 @@
+[{
+  "_id": {
+    "$oid": "693189688c9e678c5d5253fc"
+  },
+  "studentId": {
+    "$oid": "693188bb59cd9c5504c0ef3d"
+  },
+  "__v": 1,
+  "createdAt": {
+    "$date": "2025-12-04T13:15:21.586Z"
+  },
+  "subjects": [
+    {
+      "subject": "Biology",
+      "marks": 86
+    },
+    {
+      "subject": "Physics",
+      "marks": 100
+    }
+  ],
+  "updatedAt": {
+    "$date": "2025-12-04T18:25:11.009Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "693195698c9e678c5d52541c"
+  },
+  "studentId": {
+    "$oid": "6931892b59cd9c5504c0ef59"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-12-04T14:06:34.371Z"
+  },
+  "subjects": [
+    {
+      "subject": "Hindi",
+      "marks": 99
+    }
+  ],
+  "updatedAt": {
+    "$date": "2025-12-04T14:06:34.371Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6931ccef8c9e678c5d5254df"
+  },
+  "studentId": {
+    "$oid": "693188ca59cd9c5504c0ef41"
+  },
+  "__v": 2,
+  "createdAt": {
+    "$date": "2025-12-04T18:03:27.776Z"
+  },
+  "subjects": [],
+  "updatedAt": {
+    "$date": "2025-12-04T18:21:34.296Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6931d13f8c9e678c5d5254e2"
+  },
+  "studentId": {
+    "$oid": "693188fd59cd9c5504c0ef4d"
+  },
+  "__v": 5,
+  "createdAt": {
+    "$date": "2025-12-04T18:21:51.370Z"
+  },
+  "subjects": [],
+  "updatedAt": {
+    "$date": "2025-12-04T18:35:36.784Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6931d82f8c9e678c5d5254eb"
+  },
+  "studentId": {
+    "$oid": "6931d7aef36a17e2a60c80d1"
+  },
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-12-04T18:51:27.774Z"
+  },
+  "subjects": [
+    {
+      "subject": "Mathematics",
+      "marks": 95
+    }
+  ],
+  "updatedAt": {
+    "$date": "2025-12-04T18:51:27.774Z"
+  }
+}]
