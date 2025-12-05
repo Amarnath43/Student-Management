@@ -19,6 +19,5 @@ const markSchema = new mongoose.Schema({
   }
 }, { timestamps: true });
 
-markSchema.index({ studentId: 1 }, { unique: true });
 
 module.exports = mongoose.model('Mark', markSchema);
