@@ -17,9 +17,16 @@ export default function CreateStudentModal({ isOpen, onClose, onCreated }) {
   };
 
   const submit = async () => {
-    if (!form.name || !form.email || form.age === '') {
-      return Swal.fire('Validation', 'Please fill Name, Email and Age', 'warning');
+    if (!form.name.trim()) {
+      return Swal.fire('Validation', 'Name is required', 'warning');
     }
+    if (!form.email.trim()) {
+      return Swal.fire('Validation', 'Email is required', 'warning');
+    }
+    if (!form.age || isNaN(form.age) || Number(form.age) <= 0) {
+      return Swal.fire('Validation', 'Valid age is required', 'warning');
+    }
+
     setLoading(true);
     try {
       const payload = { name: form.name.trim(), email: form.email.trim(), age: Number(form.age) };
